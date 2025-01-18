@@ -63,7 +63,7 @@
 
 .left-box button 
 {
-   width: 40%;
+   width: 45%;
    font-weight: bold;
    padding: 6px;
    margin-bottom: 05px;
@@ -214,7 +214,7 @@
    <div class="left-box">
     <h2>Cover Page Generator</h2>
     <div class="button-container">
-     <button type="button" onclick="generatePreview()">Preview</button>
+     <button type="button" onclick="generatePreview()">Generate Preview</button>
      <button onclick="downloadpdf()">Generate PDF</button>
      <infobutton onclick="toggleInfoBox()">ℹ️</button>
      </div>
@@ -225,6 +225,7 @@
          Need a quick cover page for your assignment or report? <br>
          Just pop in your details—title, name, date—and boom! <br>
      You'll get a clean, ready-to-download PDF in seconds. No hassle, no stress! 🙂</p>
+     <p>N.B.: For better view use PC</p>
 
      <b>Developer:</b>
      <br>
@@ -576,7 +577,11 @@ function downloadpdf(){
 			// Save the PDF
 			doc.save("Assignment_Cover.pdf");
 			
-		}			
+		}		
+		
+		
+		
+		
 		// JavaScript function to toggle the info box
         function toggleInfoBox() {
            var infoBox = document.getElementById("infoBox");
